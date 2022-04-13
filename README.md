@@ -1,4 +1,4 @@
-This project is part of a real project 
+This project is part of the real project 
 
 Screenshots of the finished project:
 
