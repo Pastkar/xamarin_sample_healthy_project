@@ -1,4 +1,6 @@
-This project is part of the real project 
+This project is part of the real project.
+
+The projecct is a personal assistant enables to monitor health conditions and prevent potential medical problems through a simple, at-home, self-administered urine test.
 
 Screenshots of the finished project:
 
