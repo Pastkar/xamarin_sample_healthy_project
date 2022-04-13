@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorSapphireBlue"
+    >
+    <include layout="@layout/page_toolbar" />
+    <LinearLayout
+        android:id="@+id/ll_btn_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxs"
+            android:paddingLeft="@dimen/paddingleft_setting_size"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_title"
+            android:fontFamily="sans-serif-light"
+            app:MvxBind="TitleSettings"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxs"
+            android:layout_marginLeft="@dimen/padding_for_side_navigator"
+            android:layout_marginRight="@dimen/padding_for_side_navigator"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/сv_card_evalvation"
+            app:cardCornerRadius="@dimen/btn_radius_navigation"
+            app:cardBackgroundColor="@android:color/transparent"
+            >
+            <Droid.CustomViews.NavigationItem
+                android:id="@+id/btn_user"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/big_button_height"
+                android:background="@drawable/bcg_btn_home_item_selector"
+                app:navigationLeftIcon="@drawable/ic_user"
+                app:MvxBind="Click AdvancedUserCommand;TitleText [ButtonAdvancedUser]"/>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_for_side_navigator"
+            android:layout_marginRight="@dimen/padding_for_side_navigator"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/сv_card_evalvation"
+            app:cardCornerRadius="@dimen/btn_radius_navigation"
+            app:cardBackgroundColor="@android:color/transparent"
+            >
+            <Droid.CustomViews.NavigationItem
+                android:id="@+id/btn_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/big_button_height"
+                android:background="@drawable/bcg_btn_home_item_selector"
+                app:navigationLeftIcon="@drawable/ic_bell"
+                app:MvxBind="Click ReminderCommand;TitleText [ButtonReminder]"/>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+</LinearLayout>

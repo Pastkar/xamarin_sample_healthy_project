@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Agreement"
+        app:MvxBind="Click GoToAgreement"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Login"
+        app:MvxBind="Click GoToLogIn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Main"
+        app:MvxBind="Click GoToMain"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="About"
+        app:MvxBind="Click GoToAbout"/>
+     
+</LinearLayout>

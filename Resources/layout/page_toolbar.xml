@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Droid.CustomViews.ToolbarView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_logo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bcg_toolbar"
+    android:fitsSystemWindows="true">
+
+<ImageView
+      android:id="@+id/iv_logo"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="@dimen/spacing_xxs"
+      app:srcCompat="@drawable/ic_logo"
+      app:layout_constraintDimensionRatio="H,2:1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintWidth_percent="0.5" />
+
+  <ImageView
+      android:id="@+id/iv_menuLogo"
+      android:layout_width="@dimen/menu_icon_size"
+      android:layout_height="@dimen/menu_icon_size"
+      android:padding="@dimen/spacing_xs"
+      android:scaleType="centerInside"
+      android:adjustViewBounds="true"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="@+id/iv_profileLogo"
+
+      />
+  <ImageView
+      android:id="@+id/iv_profileLogo"
+      android:layout_width="@dimen/menu_icon_size"
+      android:layout_height="@dimen/menu_icon_size"
+      android:padding="@dimen/spacing_xs"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:adjustViewBounds="true"
+      android:scaleType="fitCenter"
+      app:srcCompat="@drawable/ic_user_logo_selector"
+      app:MvxBind="Click UserCommand"
+      />
+
+  <TextView
+      android:id="@+id/tv_profilLogo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/text_size_s"
+      android:layout_marginRight="@dimen/spacing_tiny"
+      app:layout_constraintEnd_toEndOf="@+id/iv_profileLogo"
+      app:layout_constraintTop_toBottomOf="@+id/iv_profileLogo"
+      app:MvxBind="Text UserName"/>
+
+</AssayMe.Droid.CustomViews.ToolbarView>
